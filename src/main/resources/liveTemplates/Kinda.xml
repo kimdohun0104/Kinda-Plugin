@@ -1,0 +1,14 @@
+<templateSet group="Kinda">
+  <template name="kindastate" value="data class $NAME$State(&#10;&#10;) : KindaState&#10;&#10;sealed class $NAME$Event : KindaEvent {&#10;&#10;&#10;}&#10;&#10;sealed class $NAME$SideEffect : KindaSideEffect {&#10;&#10;&#10;}" description="Generate Kinda State, Event, SideEffect" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="kindaviewmodel" value="class $NAME$ViewModel(&#10;) : KindaViewModel&lt;$NAME$State, $NAME$Event, $NAME$SideEffect&gt;(&#10;    initialState = $NAME$State()&#10;) {&#10;&#10;    override val reducer: KindaReducer&lt;$NAME$State, $NAME$Event, $NAME$SideEffect&gt;&#10;        get() = buildReducer {&#10;&#10;        }&#10;&#10;    override val sideEffectHandler: KindaSideEffectHandler&lt;$NAME$State, $NAME$Event, $NAME$SideEffect&gt;&#10;        get() = buildSideEffectHandler {&#10;&#10;        }&#10;}" description="Generate KindaViewModel" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+</templateSet>

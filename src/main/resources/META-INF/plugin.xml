@@ -10,8 +10,12 @@
                 class="dohun.kim.kinda_plugin.action.CreateKindaTemplateAction"
                 text="New Kinda Template"
                 description="Create kinda state and viewModel"
-        icon="Icons.KindaLogo">
+                icon="Icons.KindaLogo">
             <add-to-group group-id="NewGroup" anchor="first"/>
         </action>
     </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplates file="/liveTemplates/Kinda.xml" />
+    </extensions>
 </idea-plugin>
