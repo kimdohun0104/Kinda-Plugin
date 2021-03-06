@@ -1,0 +1,23 @@
+package $PACKAGE$
+
+import dohun.kim.kinda.kinda_android.KindaViewModel
+import dohun.kim.kinda.kinda_core.KindaReducer
+import dohun.kim.kinda.kinda_core.KindaSideEffectHandler
+import dohun.kim.kinda.kinda_dsl.buildReducer
+import dohun.kim.kinda.kinda_dsl.buildSideEffectHandler
+
+class $NAME$ViewModel(
+) : KindaViewModel<$NAME$State, $NAME$Event, $NAME$SideEffect>(
+    initialState = $NAME$State()
+) {
+
+    override val reducer: KindaReducer<$NAME$State, $NAME$Event, $NAME$SideEffect>
+        get() = buildReducer {
+
+        }
+
+    override val sideEffectHandler: KindaSideEffectHandler<$NAME$State, $NAME$Event, $NAME$SideEffect>
+        get() = buildSideEffectHandler {
+
+        }
+}

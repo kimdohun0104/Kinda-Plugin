@@ -1,19 +1,17 @@
 <idea-plugin>
     <id>com.github.kimdohun0104.kindaplugin</id>
-    <name>Kinda-Plugin</name>
+    <name>Kinda</name>
     <vendor>kimdohun0104</vendor>
 
-    <!-- Product and plugin compatibility requirements -->
-    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.kimdohun0104.kindaplugin.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.kimdohun0104.kindaplugin.services.MyProjectService"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.kimdohun0104.kindaplugin.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    <actions>
+        <action id="dohun.kim.kinda_plugin.action.CreateKindaTemplateAction"
+                class="dohun.kim.kinda_plugin.action.CreateKindaTemplateAction"
+                text="New Kinda Template"
+                description="Create kinda state and viewModel"
+        icon="Icons.KindaLogo">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>

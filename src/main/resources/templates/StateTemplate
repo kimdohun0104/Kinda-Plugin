@@ -1,0 +1,19 @@
+package $PACKAGE$
+
+import dohun.kim.kinda.kinda_core.KindaEvent
+import dohun.kim.kinda.kinda_core.KindaSideEffect
+import dohun.kim.kinda.kinda_core.KindaState
+
+data class $NAME$State(
+
+) : KindaState
+
+sealed class $NAME$Event : KindaEvent {
+
+
+}
+
+sealed class $NAME$SideEffect : KindaSideEffect {
+
+
+}
