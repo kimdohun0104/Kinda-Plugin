@@ -4,28 +4,31 @@
 [![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Verify the [pluginGroup](/gradle.properties), [plugin ID](/src/main/resources/META-INF/plugin.xml) and [sources package](/src/main/kotlin).
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the Plugin ID in the above README badges.
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
-
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+This plugin support Unidirectional Architecture library 'Kinda'.  
+It provides you many handy features with Kinda for your productivity.  
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
+You can check out the code [here](https://github.com/kimdohun0104/kinda).
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
+## Features
+### Template
+Use 'Template' feature if you want to generate State, Event, SideEffect at once.  
+All you need to do is just put name on TextField.  
+![](https://user-images.githubusercontent.com/36754680/110210045-23dfc980-7ed3-11eb-99a1-70703b7cbf88.png)  
+![](https://user-images.githubusercontent.com/36754680/110210047-26422380-7ed3-11eb-89d3-f5c0e021e79e.png)
+
+### Live Templates
+If you want to genrate State or ViewModel, you can use LiveTemplates.  
+kindastate -> Generate State, Event, SideEffect
+kindaviewmodel -> Generate KindaViewModel
+
 <!-- Plugin description end -->
 
 ## Installation
 
 - Using IDE built-in plugin system:
   
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Kinda-Plugin"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Kinda"</kbd> >
   <kbd>Install Plugin</kbd>
   
 - Manually:
